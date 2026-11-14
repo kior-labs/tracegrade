@@ -9,7 +9,7 @@ Tracegrade builds that layer from the traces themselves. It clusters real failur
 No model calls, no account, no data leaving your machine.
 
 ```bash
-npx github:kiorlabs/tracegrade analyze examples/traces.jsonl --out out
+npx github:vivshanbhag/tracegrade analyze examples/traces.jsonl --out out
 ```
 
 ```
@@ -31,10 +31,10 @@ Requires Node 18.17 or newer.
 
 ```bash
 # run without installing
-npx github:kiorlabs/tracegrade --help
+npx github:vivshanbhag/tracegrade --help
 
 # or install globally
-npm install -g github:kiorlabs/tracegrade
+npm install -g github:vivshanbhag/tracegrade
 tracegrade --help
 ```
 
@@ -132,4 +132,4 @@ Zero runtime dependencies. MIT licensed.
 
 ---
 
-A [Kior Labs](https://kiorlabs.com) product. Built by [Vivek Shanbhag](https://github.com/vivshanbhag).
+A Kior Labs product. Built by [Vivek Shanbhag](https://github.com/vivshanbhag).
