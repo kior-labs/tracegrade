@@ -1,0 +1,5 @@
+node_modules/
+tracegrade-out/
+out/
+*.log
+.DS_Store

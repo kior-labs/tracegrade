@@ -1,0 +1,39 @@
+{
+  "name": "tracegrade",
+  "version": "0.1.0",
+  "description": "Turn production agent traces into a calibrated eval suite: cluster real failures, generate assertions and rubrics, measure judge agreement.",
+  "type": "module",
+  "bin": {
+    "tracegrade": "./bin/tracegrade.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/",
+    "demo": "node bin/tracegrade.js analyze examples/traces.jsonl --out examples/out && node bin/tracegrade.js generate examples/traces.jsonl --out examples/out/suite.json"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "keywords": [
+    "evals",
+    "ai-agents",
+    "llm",
+    "observability",
+    "traces",
+    "evaluation",
+    "claude",
+    "mcp"
+  ],
+  "author": "Vivek Shanbhag",
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+case_id,input,human,judge,notes
+case-001,Where is order A-1042?,fail,fail,Tool timed out and the agent gave up
+case-002,Has my order A-2091 shipped yet?,fail,fail,""
+case-003,Can I return order A-1042? It arrived 40 days ago.,fail,fail,Outside the 30-day window
+case-004,I bought the lamp on 12 April. Can I still return it?,fail,fail,""
+case-005,Where is order A-1042? I already gave you the number.,fail,fail,""
+case-006,Cancel order A-3311 before it ships.,pass,fail,Human accepted the escalation; judge punished the refusal
+case-007,Return the order summary as JSON with id status and total.,fail,fail,Returned prose instead of JSON
+case-008,Give me the refund as JSON with id and amount.,fail,fail,Missing the amount key
+case-009,Refund A-5501 please.,fail,fail,Called a tool that does not exist
+case-010,Where is A-1042?,fail,fail,Empty answer
+case-011,What is the refund status for A-5501?,fail,fail,""
+case-012,My refund has not arrived after 10 days.,pass,pass,Escalation to a human was the right call
+case-013,Can I change the delivery address on A-1042?,fail,fail,Answered without checking the order
+case-014,Find my order from last Tuesday and tell me if it shipped.,pass,pass,Slow but correct
+case-015,Summarise every order from the last year and find patterns.,fail,fail,Blew the token budget
+case-016,Check A-1042 and email me the tracking link.,pass,fail,Email was sent; judge treated latency as failure
